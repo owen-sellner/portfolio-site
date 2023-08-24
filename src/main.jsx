@@ -4,8 +4,7 @@ import Home from './Home.jsx';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { darkTheme } from './theme/darkTheme.js';
 import { lightTheme } from './theme/lightTheme.js';
-
-const ThemeContext = createContext();
+import ThemeContext from './theme/ThemeContext.js';
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -15,9 +14,12 @@ function App() {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme}}>
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
         <CssBaseline />
+        <button onClick={toggleTheme}>
+          toggle theme
+        </button>
         <Home />
       </ThemeProvider>
     </ThemeContext.Provider>

@@ -1,8 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import { useContext, useState } from 'react'
+import ThemeContext from './theme/ThemeContext';
+import "./App.css";
 
 function Home() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <>
@@ -11,6 +14,11 @@ function Home() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+
+        <button onClick={toggleTheme}>
+          toggle theme {theme ? "TRUE" : "FALSE"}
+        </button>
+
         <p>
           Edit <code>src/App.jsx
             sad
