@@ -1,10 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Home from './Home.jsx'
-import './index.css'
+import React, { createContext, useState } from 'react';
+import ReactDOM from 'react-dom/client';
+import Home from './Home.jsx';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { darkTheme } from './theme/darkTheme.js';
+import { lightTheme } from './theme/lightTheme.js';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-)
+const ThemeContext = createContext();
+
+function App() {
+  const [theme, setTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => !prevTheme);
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <ThemeProvider theme={theme ? darkTheme : lightTheme}>
+        <CssBaseline />
+        <Home />
+      </ThemeProvider>
+    </ThemeContext.Provider>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
