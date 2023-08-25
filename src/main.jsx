@@ -17,9 +17,6 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme}}>
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
         <CssBaseline />
-        <button onClick={toggleTheme}>
-          toggle theme
-        </button>
         <Home />
       </ThemeProvider>
     </ThemeContext.Provider>

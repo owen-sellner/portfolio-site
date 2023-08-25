@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react'
 import ThemeContext from './theme/ThemeContext';
-import "./App.css";
+import { Box } from '@mui/material';
+import NavBar from './components/NavBar';
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -9,25 +10,15 @@ function Home() {
 
   return (
     <>
-      <h1>Hello, world!</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-
-        <button onClick={toggleTheme}>
-          toggle theme {theme ? "TRUE" : "FALSE"}
-        </button>
-
-        <p>
-          Edit <code>src/App.jsx
-            sad
-            asd
-            asd</code> and save to test HMR
-        </p>
-      </div>
+      <Box>
+        <Box className="#navbar" sx={{ height: '10vh' }}>
+          <NavBar />
+        </Box>
+        <Box sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
+        <Box sx={{ bgcolor: '#000000', height: '100vh' }} />
+      </Box>
     </>
-  )
-}
+  );
+};
 
 export default Home;

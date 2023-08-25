@@ -1,0 +1,30 @@
+import { useContext } from 'react'
+import ThemeContext from '../theme/ThemeContext';
+import { Box, Link, IconButton } from '@mui/material';
+import compassIcon from '../icons/compass.svg';
+import sunIcon from '../icons/sun.svg';
+import moonIcon from '../icons/moon.svg';
+
+function NavBar() {
+
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
+    return (
+        <> 
+            <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+                <img src={compassIcon} style={{ width: '70px', height: '70px' }} />
+                <h1 style={{ fontFamily: "Verdana", fontSize: 25 }}>Home</h1>
+                <h1 style={{ fontFamily: "Verdana", fontSize: 25 }}>About</h1>
+                <h1 style={{ fontFamily: "Verdana", fontSize: 25}}>Projects</h1>
+                <h1 style={{ fontFamily: "Verdana", fontSize: 25 }}>Resume</h1>
+                <IconButton onClick={toggleTheme}>
+                    {theme ? 
+                        <img src={sunIcon} style={{ width: '40px', height: '40px' }} /> 
+                        : <img src={moonIcon} style={{ width: '40px', height: '40px' }} />}
+                </IconButton>
+            </Box>
+        </>
+    );
+};
+
+export default NavBar;
