@@ -11,10 +11,10 @@ function Home() {
   return (
     <>
       <Box>
-        <Box className="#navbar" sx={{ height: '10vh' }}>
+        <Box className="#navbar" sx={{ height: '10vh', display: 'flex', alignItems: 'center' }}>
           <NavBar />
         </Box>
-        <Box sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
+        <Box sx={{ bgcolor: '#aaaaaa', height: '90vh' }} />
         <Box sx={{ bgcolor: '#000000', height: '100vh' }} />
       </Box>
     </>
