@@ -11,7 +11,7 @@ function NavBar() {
 
     return (
         <> 
-            <Box sx={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Box sx={{ position: 'fixed', width: '100%', display: 'flex', justifyContent: 'space-around' }}>
                 <img src={compassIcon} style={{ width: '70px', height: '70px' }} />
                 <h1 style={{ fontFamily: "Verdana", fontSize: 25 }}>Home</h1>
                 <h1 style={{ fontFamily: "Verdana", fontSize: 25 }}>About</h1>
