@@ -3,10 +3,6 @@ import { Container, Box, Typography, Button } from '@mui/material';
 import ThemeContext from '../theme/ThemeContext';
 import ExternalLinkIcon from '../icons/ExternalLinkIcon';
 import PDF from '../../static/Resume - Owen Sellner.pdf';
-import { Document, Page, pdfjs } from 'react-pdf';
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
 
 function Experience() {
 
@@ -31,9 +27,6 @@ function Experience() {
                         <ExternalLinkIcon width="30px" height="30px" stroke={theme ? '#ffffff' : '#000000'} />
                     </Button>
                 </Box>
-                <Document file={PDF} >
-                    <Page pageNumber={1} />
-                </Document>
             </Container>
         </Container>
     );
