@@ -7,10 +7,18 @@ import { lightTheme } from './theme/lightTheme.js';
 import ThemeContext from './theme/ThemeContext.js';
 
 function App() {
-  const [theme, setTheme] = useState(false);
+
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme");
+  })
 
   const toggleTheme = () => {
-    setTheme(prevTheme => !prevTheme);
+    if (localStorage.getItem("theme")) {
+      localStorage.removeItem("theme");
+    } else {
+      localStorage.setItem("theme", "true");
+    }
+    setTheme(localStorage.getItem("theme"));
   };
 
   return (
