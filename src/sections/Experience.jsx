@@ -3,13 +3,14 @@ import { Container, Box, Typography, Button } from '@mui/material';
 import ThemeContext from '../theme/ThemeContext';
 import ExternalLinkIcon from '../icons/ExternalLinkIcon';
 import PDF from '../../static/Resume - Owen Sellner.pdf';
+import PDFImage from '../../static/Resume - Owen Sellner.png';
 
 function Experience() {
 
     const { theme } = useContext(ThemeContext);
 
     return (
-        <Container sx={{ py: 20 }}>
+        <Container sx={{ pt: 20 }}>
             <Typography variant='heading'>Experience</Typography>
             <Container sx={{ width: '75%' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
@@ -26,6 +27,13 @@ function Experience() {
                         <Typography sx={{ mr: 1 }} variant='largeText'>View PDF</Typography>
                         <ExternalLinkIcon width="30px" height="30px" stroke={theme ? '#ffffff' : '#000000'} />
                     </Button>
+                </Box>
+                <Box sx={{ p: 1, bgcolor: '#525252' }}>
+                    <img
+                        src={PDFImage}
+                        alt="Resume"
+                        style={{ width: '100%', height: 'auto' }}
+                    />
                 </Box>
             </Container>
         </Container>
