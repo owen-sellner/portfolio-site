@@ -11,7 +11,7 @@ function NavBar() {
 
     return (
         <>
-            <Box sx={{ height: '10vh', display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ zIndex: 2, height: '10vh', display: 'flex', alignItems: 'center' }}>
                 <Box sx={{ position: 'fixed', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
                     <img src={compassIcon} style={{ width: '70px', height: '70px' }} />
                     <Typography variant="navText">Home</Typography>

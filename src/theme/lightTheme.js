@@ -15,5 +15,13 @@ export const lightTheme = createTheme({
             fontSize: 25,
             fontWeight: 600,
         },
+        title : {
+            fontSize: 75,
+            fontWeight: 600,
+        },
+        subtitle : {
+            fontSize: 30,
+            fontWeight: 600,
+        },
     },
 });
