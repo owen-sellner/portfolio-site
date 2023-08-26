@@ -11,9 +11,21 @@ function Home() {
           <NavBar />
           <Title />
         </Box>
-        <Box id="about" sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
-        <Box id="experience" sx={{ height: '100vh' }} />
-        <Box id="projects" sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
+        <Box id="about" sx={{ height: '100vh' }}>
+          <Box sx={{ py: 20, px: 30 }}>
+            <Typography variant='heading'>About</Typography>
+          </Box>
+        </Box>
+        <Box id="experience" sx={{ height: '100vh' }}>
+          <Box sx={{ py: 20, px: 30 }}>
+            <Typography variant='heading'>Experience</Typography>
+          </Box>
+        </Box>
+        <Box id="projects" sx={{ height: '100vh' }}>
+          <Box sx={{ py: 20, px: 30 }}>
+            <Typography variant='heading'>Projects</Typography>
+          </Box>
+        </Box>
       </Box>
     </>
   );

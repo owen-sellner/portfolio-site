@@ -23,5 +23,9 @@ export const lightTheme = createTheme({
             fontSize: 30,
             fontWeight: 600,
         },
+        heading : {
+            fontSize: 60,
+            fontWeight: 600,
+        },
     },
 });
