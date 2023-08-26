@@ -14,10 +14,10 @@ function Title() {
             <Typography variant="title" sx={{ m: 1 }}>Owen Sellner</Typography>
             <Typography variant="subtitle" sx={{ color: '#45AAB8', m: 1 }}>Engineering Student @ UWaterloo</Typography>
             <Box>
-                <IconButton sx={{ m: 1 }} style={{ backgroundColor: 'transparent' }}>
+                <IconButton href='https://github.com/owen-sellner' target='_blank' sx={{ m: 1 }} style={{ backgroundColor: 'transparent' }}>
                     <GitHubIcon width="50px" height="50px" fill={theme ? '#ffffff': '#000000'} />
                 </IconButton>
-                <IconButton sx={{ m: 1 }} style={{ backgroundColor: 'transparent' }}>
+                <IconButton href='https://linkedin.com/in/owen-sellner' target='_blank' sx={{ m: 1 }} style={{ backgroundColor: 'transparent' }}>
                     <LinkedInIcon width="50px" height="50px" />
                 </IconButton>
             </Box>
