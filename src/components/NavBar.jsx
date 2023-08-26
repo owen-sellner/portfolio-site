@@ -1,6 +1,6 @@
-import { useContext } from 'react'
+import { useContext } from 'react';
 import ThemeContext from '../theme/ThemeContext';
-import { Box, Link, IconButton, Typography, useTheme } from '@mui/material';
+import { Box, Link, IconButton, Typography } from '@mui/material';
 import compassIcon from '../icons/compass.svg';
 import sunIcon from '../icons/sun.svg';
 import moonIcon from '../icons/moon.svg';
