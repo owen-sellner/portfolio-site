@@ -12,7 +12,7 @@ function NavBar() {
 
     return (
         <>
-            <Box sx={{ zIndex: 2, height: '10vh', display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ height: '10vh', display: 'flex', alignItems: 'center' }}>
                 <Box sx={{ position: 'fixed', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
                     <img src={compassIcon} style={{ width: '70px', height: '70px' }} />
                     <Link activeStyle={{ color: '#45AAB8'}} style={{ cursor: 'pointer' }} smooth spy to="home">
