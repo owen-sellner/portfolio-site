@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import NavBar from './components/NavBar';
 import Title from './sections/Title';
 
@@ -11,22 +11,22 @@ function Home() {
           <NavBar />
           <Title />
         </Box>
-        <Box id="about" sx={{ height: '100vh' }}>
-          <Box sx={{ py: 20, px: 30 }}>
+        <Box id="about" sx={{ height: '90vh' }}>
+          <Container sx={{ py: 20 }}>
             <Typography variant='heading'>About</Typography>
-          </Box>
+          </Container>
         </Box>
         <Box id="experience" sx={{ height: '100vh' }}>
-          <Box sx={{ py: 20, px: 30 }}>
+          <Container sx={{ py: 20 }}>
             <Typography variant='heading'>Experience</Typography>
-          </Box>
+          </Container>
         </Box>
         <Box id="projects" sx={{ height: '100vh' }}>
-          <Box sx={{ py: 20, px: 30 }}>
+          <Container sx={{ py: 20 }}>
             <Typography variant='heading'>Projects</Typography>
-          </Box>
+          </Container>
         </Box>
-      </Box>
+      </Box >
     </>
   );
 };
