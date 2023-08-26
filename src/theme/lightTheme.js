@@ -1,6 +1,8 @@
 import { createTheme } from "@mui/material";
+import { textTheme } from "./textTheme";
 
 export const lightTheme = createTheme({
+    ...textTheme,
     palette: {
         background: {
             default: "#ffffff"
@@ -8,24 +10,5 @@ export const lightTheme = createTheme({
         text: {
             primary: "#525252"
         }
-    },
-    typography: {
-        fontFamily: 'Verdana, Helvetica',
-        navText: {
-            fontSize: 25,
-            fontWeight: 600,
-        },
-        title : {
-            fontSize: 75,
-            fontWeight: 600,
-        },
-        subtitle : {
-            fontSize: 30,
-            fontWeight: 600,
-        },
-        heading : {
-            fontSize: 60,
-            fontWeight: 600,
-        },
     },
 });
