@@ -11,7 +11,7 @@ function Home() {
           <NavBar />
           <Title />
         </Box>
-        <Box id="about" sx={{ height: '90vh' }}>
+        <Box id="about" sx={{ height: '100vh' }}>
           <Container sx={{ py: 20 }}>
             <Typography variant='heading'>About</Typography>
           </Container>
