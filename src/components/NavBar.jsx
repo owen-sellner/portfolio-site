@@ -21,11 +21,11 @@ function NavBar() {
                     <Link activeStyle={{ color: '#45AAB8'}} style={{ cursor: 'pointer' }} smooth spy to="about">
                         <Typography variant="navText">About</Typography>
                     </Link>
+                    <Link activeStyle={{ color: '#45AAB8'}} style={{ cursor: 'pointer' }} smooth spy to="experience">
+                        <Typography variant="navText">Experience</Typography>
+                    </Link>
                     <Link activeStyle={{ color: '#45AAB8'}} style={{ cursor: 'pointer' }} smooth spy to="projects">
                         <Typography variant="navText">Projects</Typography>
-                    </Link>
-                    <Link style={{ cursor: 'pointer' }} onClick={() => {}}> 
-                        <Typography variant="navText">Resume</Typography>
                     </Link>
                     <IconButton onClick={toggleTheme}>
                         {theme ?

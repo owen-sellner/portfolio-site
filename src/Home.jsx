@@ -12,7 +12,8 @@ function Home() {
           <Title />
         </Box>
         <Box id="about" sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
-        <Box id="projects" sx={{ bgcolor: '#000000', height: '100vh' }} />
+        <Box id="experience" sx={{ height: '100vh' }} />
+        <Box id="projects" sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
       </Box>
     </>
   );
