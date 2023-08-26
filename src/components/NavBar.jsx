@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import ThemeContext from '../theme/ThemeContext';
-import { Box, Link, IconButton, Typography } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
+import { Link } from 'react-scroll';
 import compassIcon from '../icons/compass.svg';
 import sunIcon from '../icons/sun.svg';
 import moonIcon from '../icons/moon.svg';
@@ -14,10 +15,18 @@ function NavBar() {
             <Box sx={{ zIndex: 2, height: '10vh', display: 'flex', alignItems: 'center' }}>
                 <Box sx={{ position: 'fixed', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
                     <img src={compassIcon} style={{ width: '70px', height: '70px' }} />
-                    <Typography variant="navText">Home</Typography>
-                    <Typography variant="navText">About</Typography>
-                    <Typography variant="navText">Projects</Typography>
-                    <Typography variant="navText">Resume</Typography>
+                    <Link activeStyle={{ color: '#45AAB8'}} style={{ cursor: 'pointer' }} smooth spy to="home">
+                        <Typography variant="navText">Home</Typography>
+                    </Link>
+                    <Link activeStyle={{ color: '#45AAB8'}} style={{ cursor: 'pointer' }} smooth spy to="about">
+                        <Typography variant="navText">About</Typography>
+                    </Link>
+                    <Link activeStyle={{ color: '#45AAB8'}} style={{ cursor: 'pointer' }} smooth spy to="projects">
+                        <Typography variant="navText">Projects</Typography>
+                    </Link>
+                    <Link style={{ cursor: 'pointer' }} onClick={() => {}}> 
+                        <Typography variant="navText">Resume</Typography>
+                    </Link>
                     <IconButton onClick={toggleTheme}>
                         {theme ?
                             <img src={sunIcon} style={{ width: '40px', height: '40px' }} />

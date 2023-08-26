@@ -7,12 +7,12 @@ function Home() {
   return (
     <>
       <Box>
-        <Box sx={{ height: '100vh' }}>
+        <Box id="home" sx={{ height: '100vh' }}>
           <NavBar />
           <Title />
         </Box>
-        <Box sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
-        <Box sx={{ bgcolor: '#000000', height: '100vh' }} />
+        <Box id="about" sx={{ bgcolor: '#aaaaaa', height: '100vh' }} />
+        <Box id="projects" sx={{ bgcolor: '#000000', height: '100vh' }} />
       </Box>
     </>
   );
