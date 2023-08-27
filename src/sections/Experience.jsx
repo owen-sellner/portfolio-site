@@ -28,7 +28,7 @@ function Experience() {
                         <ExternalLinkIcon width="30px" height="30px" stroke={theme ? '#ffffff' : '#000000'} />
                     </Button>
                 </Box>
-                <Box sx={{ p: 1, bgcolor: '#525252' }}>
+                <Box sx={{ p: 2, background: 'linear-gradient(#45AAB8, #4565B8)' }}>
                     <img
                         src={PDFImage}
                         alt="Resume"
