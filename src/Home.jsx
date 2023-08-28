@@ -13,7 +13,7 @@ function Home() {
           <Title />
         </Box>
         <Box id="about" sx={{ height: '100vh' }}>
-          <Container sx={{ py: 20 }}>
+          <Container sx={{ pt: 20 }}>
             <Typography variant='heading'>About</Typography>
           </Container>
         </Box>
@@ -21,7 +21,7 @@ function Home() {
           <Experience />
         </Box>
         <Box id="projects" sx={{ height: '100vh' }}>
-          <Container sx={{ py: 20 }}>
+          <Container sx={{ pt: 20 }}>
             <Typography variant='heading'>Projects</Typography>
           </Container>
         </Box>
