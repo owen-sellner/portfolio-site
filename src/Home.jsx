@@ -2,6 +2,7 @@ import { Box, Container, Typography } from '@mui/material';
 import NavBar from './components/NavBar';
 import Title from './sections/Title';
 import Experience from './sections/Experience';
+import About from './sections/About';
 
 function Home() {
 
@@ -12,10 +13,8 @@ function Home() {
           <NavBar />
           <Title />
         </Box>
-        <Box id="about" sx={{ height: '100vh' }}>
-          <Container sx={{ pt: 20 }}>
-            <Typography variant='heading'>About</Typography>
-          </Container>
+        <Box id="about">
+          <About />
         </Box>
         <Box id="experience" >
           <Experience />
