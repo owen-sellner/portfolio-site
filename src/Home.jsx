@@ -4,6 +4,7 @@ import Title from './sections/Title';
 import Experience from './sections/Experience';
 import About from './sections/About';
 import Footer from './sections/Footer';
+import ProjectCard from './components/ProjectCard';
 
 function Home() {
 
@@ -19,12 +20,13 @@ function Home() {
       <Box id="experience">
         <Experience />
       </Box>
-      <Box id="projects" sx={{ height: '100vh' }}>
+      <Box id="projects" sx={{ height: '93vh' }}>
         <Container sx={{ pt: 20 }}>
           <Typography variant='heading'>Projects</Typography>
         </Container>
       </Box>
       <Footer />
+      <ProjectCard />
     </>
   );
 };

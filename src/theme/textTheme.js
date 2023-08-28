@@ -20,5 +20,20 @@ export const textTheme = {
         largeText : {
             fontSize: 20,
         },
+        projectCardTitle: {
+            fontSize: 24,
+            fontWeight: 600,
+            display: 'block',
+        },
+        projectCardSubtitle: {
+            fontSize: 18,
+            fontWeight: 600,
+            display: 'block',
+        },
+        projectCardDescription: {
+            fontSize: 14,
+            fontWeight: 600,
+            display: 'block',
+        },
     },
 }
