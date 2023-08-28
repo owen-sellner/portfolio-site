@@ -14,7 +14,7 @@ export const textTheme = {
             fontWeight: 600,
         },
         heading : {
-            fontSize: "7vh",
+            fontSize: "3.5em",
             fontWeight: 600,
         },
         largeText : {
