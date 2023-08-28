@@ -25,7 +25,7 @@ function NavBar() {
                     <Box
                         style={{ zIndex: 99999 }}
                         sx={{
-                            position: 'static',
+                            position: 'fixed',
                             width: '100%',
                             display: 'flex',
                             alignItems: 'center',
