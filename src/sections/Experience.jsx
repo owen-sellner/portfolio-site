@@ -11,7 +11,7 @@ function Experience() {
 
     const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"));
 
-    const PADDING = isMobile ? 5 : 20;
+    const PADDING = isMobile ? 10 : 20;
 
     return (
         <Container sx={{ pt: PADDING }}>
