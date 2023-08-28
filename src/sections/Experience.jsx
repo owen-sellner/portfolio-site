@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Container, Box, Typography, Button } from '@mui/material';
+import { Container, Box, Typography, Button, useMediaQuery, useTheme } from '@mui/material';
 import ThemeContext from '../theme/ThemeContext';
 import ExternalLinkIcon from '../icons/ExternalLinkIcon';
 import PDF from '../../static/Resume - Owen Sellner.pdf';
@@ -9,8 +9,12 @@ function Experience() {
 
     const { theme } = useContext(ThemeContext);
 
+    const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"));
+
+    const PADDING = isMobile ? 5 : 20;
+
     return (
-        <Container sx={{ pt: 20 }}>
+        <Container sx={{ pt: PADDING }}>
             <Typography variant='heading'>Experience</Typography>
             <Container sx={{ width: '75%' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>

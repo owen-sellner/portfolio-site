@@ -17,7 +17,7 @@ function Home() {
             <Typography variant='heading'>About</Typography>
           </Container>
         </Box>
-        <Box id="experience">
+        <Box id="experience" >
           <Experience />
         </Box>
         <Box id="projects" sx={{ height: '100vh' }}>
