@@ -16,7 +16,7 @@ function Experience() {
     return (
         <Container sx={{ pt: PADDING }}>
             <Typography variant='heading'>Experience</Typography>
-            <Container sx={{ width: '75%' }}>
+            <Container maxWidth="md">
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <Button
                         href={PDF}
