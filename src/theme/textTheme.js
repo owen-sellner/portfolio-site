@@ -19,6 +19,7 @@ export const textTheme = {
         },
         largeText : {
             fontSize: 20,
+            display: 'block',
         },
         projectCardTitle: {
             fontSize: 24,
