@@ -30,7 +30,6 @@ function ProjectCard({ project }) {
                 background: 'linear-gradient(#45AAB8, #4565B8)'
             }}
         >
-            {console.log(project)}
             <Box sx={{ height: INNER_HEIGHT, width: INNER_WIDTH, background: BACKGROUND }}>
                 <Box sx={{ m: 2 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
