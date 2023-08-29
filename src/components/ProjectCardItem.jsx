@@ -8,6 +8,7 @@ function ProjectCardItem({ color, text }) {
                 px: 2,
                 py: 1,
                 mr: 1,
+                mb: 1,
                 borderRadius: 30, 
                 display: 'inline-flex',
                 alignItems: 'center', 

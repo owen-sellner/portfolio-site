@@ -30,8 +30,9 @@ function ProjectCard({ project }) {
                 background: 'linear-gradient(#45AAB8, #4565B8)'
             }}
         >
+            {console.log(project)}
             <Box sx={{ height: INNER_HEIGHT, width: INNER_WIDTH, background: BACKGROUND }}>
-                <Box sx={{ mx: 2, my: 2 }}>
+                <Box sx={{ m: 2 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <Typography flexGrow={1} variant="largeText">
                             {project.year}
@@ -52,11 +53,11 @@ function ProjectCard({ project }) {
                             </IconButton>
                         }
                     </Box>
-                    <Typography variant="projectCardTitle">
+                    <Typography variant="projectCardTitle" sx={{ my: 1 }}>
                         {project.title}
                     </Typography>
-                    <Typography variant="projectCardDescription">
-                        Description of the project and what it does. Description of the project and what it does.
+                    <Typography variant="projectCardDescription" sx={{ my: 1 }}>
+                        {project.description}
                     </Typography>
                     {project.languages.length > 0 &&
                         <>
