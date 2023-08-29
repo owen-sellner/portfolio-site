@@ -25,8 +25,8 @@ function Home() {
       <Box id="projects">
         <Container sx={{ pt: 20 }}>
           <Typography variant='heading'>Projects</Typography>
-          <Container maxWidth="md">
-            <Grid container spacing={1}>
+          <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
+            <Grid container spacing={3}>
               {/* First Row */}
               <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <ProjectCard project={projects[0]} />
