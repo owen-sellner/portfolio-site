@@ -6,8 +6,8 @@ export const projects = [
         languages: ["Javascript"],
         frameworks: ["React", "Material-UI"],
         figma: "",
-        github: "",
-        demo: "",
+        github: "https://github.com/owen-sellner/portfolio-site",
+        demo: "https://owen-sellner.netlify.app/",
     },
     {
         year: "",

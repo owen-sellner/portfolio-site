@@ -35,5 +35,9 @@ export const textTheme = {
             fontWeight: 600,
             display: 'block',
         },
+        projectCardItem: {
+            fontSize: 14,
+            display: 'block',
+        },
     },
 }

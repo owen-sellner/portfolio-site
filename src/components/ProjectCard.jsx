@@ -3,9 +3,10 @@ import ThemeContext from "../theme/ThemeContext";
 import { useContext } from "react";
 import GitHubIcon from "../icons/GitHubIcon";
 import ExternalLinkIcon from "../icons/ExternalLinkIcon";
+import ProjectCardItem from "./ProjectCardItem";
 
 
-function ProjectCard() {
+function ProjectCard({ project }) {
 
     const { theme } = useContext(ThemeContext);
 
@@ -27,39 +28,56 @@ function ProjectCard() {
             }}
         >
             <Box sx={{ height: '20em', width: '20em', background: BACKGROUND }}>
-                <Box sx={{ m: 2 }}>
+                <Box sx={{ mx: 2, mt: 1 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <Typography flexGrow={1} variant="largeText">
-                            2023
+                            {project.year}
                         </Typography>
-                        <IconButton style={{ background: 'transparent' }}>
-                            <GitHubIcon width={ICON_SIZE} height={ICON_SIZE} fill={THEME_COLOUR} />
-                        </IconButton>
-                        <IconButton style={{ background: 'transparent' }}>
-                            <GitHubIcon width={ICON_SIZE} height={ICON_SIZE} fill={THEME_COLOUR} />
-                        </IconButton>
-                        <IconButton style={{ background: 'transparent' }}>
-                            <ExternalLinkIcon width={ICON_SIZE} height={ICON_SIZE} stroke={THEME_COLOUR} />
-                        </IconButton>
+                        {project.figma &&
+                            <IconButton href={project.figma} target="_blank" style={{ background: 'transparent' }}>
+                                <GitHubIcon width={ICON_SIZE} height={ICON_SIZE} fill={THEME_COLOUR} />
+                            </IconButton>
+                        }
+                        {project.github &&
+                            <IconButton href={project.github} target="_blank" style={{ background: 'transparent' }}>
+                                <GitHubIcon width={ICON_SIZE} height={ICON_SIZE} fill={THEME_COLOUR} />
+                            </IconButton>
+                        }
+                        {project.demo &&
+                            <IconButton href={project.demo} target="_blank" style={{ background: 'transparent' }}>
+                                <ExternalLinkIcon width={ICON_SIZE} height={ICON_SIZE} stroke={THEME_COLOUR} />
+                            </IconButton>
+                        }
                     </Box>
                     <Typography variant="projectCardTitle">
-                        Portfolio Site
+                        {project.title}
                     </Typography>
                     <Typography variant="projectCardDescription">
                         Description of the project and what it does. Description of the project and what it does.
                     </Typography>
-                    <Box sx={{ mt: 1 }}>
-                        <Typography variant="projectCardSubtitle">
-                            Languages:
-                        </Typography>
-                        <Typography variant="projectCardSubtitle">
-                            Frameworks:
-                        </Typography>
-                    </Box>
-
+                    {project.languages.length > 0 &&
+                        <>
+                            <Typography variant="projectCardSubtitle" sx={{ my: 1 }}>
+                                Languages:
+                            </Typography>
+                            {project.languages.map((language) =>
+                                <ProjectCardItem color={'#45AAB8'} text={language} />
+                            )}
+                        </>
+                    }
+                    {project.frameworks.length > 0 &&
+                        <>
+                            <Typography variant="projectCardSubtitle" sx={{ my: 1 }}>
+                                Frameworks:
+                            </Typography>
+                            {project.frameworks.map((framework) =>
+                                <ProjectCardItem color={'#4565B8'} text={framework} />
+                            )}
+                        </>
+                    }
                 </Box>
             </Box>
-        </Box>
+        </Box >
     );
 };
 

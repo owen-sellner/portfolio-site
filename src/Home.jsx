@@ -4,7 +4,9 @@ import Title from './sections/Title';
 import Experience from './sections/Experience';
 import About from './sections/About';
 import Footer from './sections/Footer';
+
 import ProjectCard from './components/ProjectCard';
+import { projects } from '../static/projects';
 
 function Home() {
 
@@ -26,7 +28,7 @@ function Home() {
         </Container>
       </Box>
       <Footer />
-      <ProjectCard />
+      <ProjectCard project={projects[0]} />
     </>
   );
 };
