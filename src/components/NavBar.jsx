@@ -20,7 +20,7 @@ function NavBar() {
 
     return (
         <>
-            <Box sx={{ height: '10vh', display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ height: '6em', display: 'flex', alignItems: 'center' }}>
                 {isMobile ?
                     <Box
                         style={{ zIndex: 99999 }}
@@ -47,7 +47,8 @@ function NavBar() {
                             width: '100%',
                             display: 'flex',
                             alignItems: 'center',
-                            justifyContent: 'space-around'
+                            justifyContent: 'space-around',
+                            py: 2
                         }}
                     >
                         <img src={compassIcon} style={{ width: '70px', height: '70px' }} />
