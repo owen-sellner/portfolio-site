@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material";
 import ThemeContext from "../theme/ThemeContext";
 import { useContext } from "react";
 import GitHubIcon from "../icons/GitHubIcon";
@@ -10,8 +10,12 @@ function ProjectCard({ project }) {
 
     const { theme } = useContext(ThemeContext);
 
-    const BACKGROUND = theme ? '#000000' : '#ffffff';
+    const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"));
 
+    const OUTER_SIZE = isMobile ? '22em' : '26em';
+    const INNER_SIZE = isMobile ? '20em' : '24em';
+
+    const BACKGROUND = theme ? '#000000' : '#ffffff';
     const THEME_COLOUR = theme ? '#ffffff' : '#000000';
 
     const ICON_SIZE = '27px';
@@ -22,12 +26,12 @@ function ProjectCard({ project }) {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '22em',
-                width: '22em',
+                height: OUTER_SIZE,
+                width: OUTER_SIZE,
                 background: 'linear-gradient(#45AAB8, #4565B8)'
             }}
         >
-            <Box sx={{ height: '20em', width: '20em', background: BACKGROUND }}>
+            <Box sx={{ height: INNER_SIZE, width: INNER_SIZE, background: BACKGROUND }}>
                 <Box sx={{ mx: 2, mt: 1 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <Typography flexGrow={1} variant="largeText">
