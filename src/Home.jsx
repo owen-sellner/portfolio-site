@@ -22,30 +22,30 @@ function Home() {
       <Box id="experience">
         <Experience />
       </Box>
-      <Box id="projects" sx={{ height: '93vh' }}>
+      <Box id="projects">
         <Container sx={{ pt: 20 }}>
           <Typography variant='heading'>Projects</Typography>
+          <Container maxWidth="md">
+            <Grid container spacing={1}>
+              {/* First Row */}
+              <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <ProjectCard project={projects[0]} />
+              </Grid>
+              <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <ProjectCard project={projects[0]} />
+              </Grid>
+
+              {/* Second Row */}
+              <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <ProjectCard project={projects[0]} />
+              </Grid>
+              <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <ProjectCard project={projects[0]} />
+              </Grid>
+            </Grid>
+          </Container>
         </Container>
       </Box>
-      <Container maxWidth="md">
-        <Grid container spacing={1}>
-          {/* First Row */}
-          <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ProjectCard project={projects[0]} />
-          </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ProjectCard project={projects[0]} />
-          </Grid>
-
-          {/* Second Row */}
-          <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ProjectCard project={projects[0]} />
-          </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ProjectCard project={projects[0]} />
-          </Grid>
-        </Grid>
-      </Container>
       <Footer />
     </>
   );
