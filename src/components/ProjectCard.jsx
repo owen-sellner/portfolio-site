@@ -3,6 +3,7 @@ import ThemeContext from "../theme/ThemeContext";
 import { useContext } from "react";
 import GitHubIcon from "../icons/GitHubIcon";
 import ExternalLinkIcon from "../icons/ExternalLinkIcon";
+import FigmaIcon from "../icons/FigmaIcon";
 import ProjectCardItem from "./ProjectCardItem";
 
 
@@ -18,7 +19,7 @@ function ProjectCard({ project }) {
     const BACKGROUND = theme ? '#000000' : '#ffffff';
     const THEME_COLOUR = theme ? '#ffffff' : '#000000';
 
-    const ICON_SIZE = '27px';
+    const ICON_SIZE = '28px';
 
     return (
         <Box
@@ -38,7 +39,7 @@ function ProjectCard({ project }) {
                         </Typography>
                         {project.figma &&
                             <IconButton href={project.figma} target="_blank" style={{ background: 'transparent' }}>
-                                <GitHubIcon width={ICON_SIZE} height={ICON_SIZE} fill={THEME_COLOUR} />
+                                <FigmaIcon width={ICON_SIZE} height={ICON_SIZE} stroke={THEME_COLOUR} />
                             </IconButton>
                         }
                         {project.github &&

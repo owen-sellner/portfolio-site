@@ -5,7 +5,7 @@ export const projects = [
         description: "A website to share information about myself and showcase projects I have worked on.",
         languages: ["Javascript"],
         frameworks: ["React", "Material-UI"],
-        figma: "",
+        figma: "https://www.figma.com/file/oPZpGg5H8qSwLa5M7oCQpw/Portfolio-Website?type=design&node-id=0%3A1&mode=design&t=gblrKQOtUkHPDFfa-1",
         github: "https://github.com/owen-sellner/portfolio-site",
         demo: "https://owen-sellner.netlify.app/",
     },
