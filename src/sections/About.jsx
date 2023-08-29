@@ -11,22 +11,17 @@ function About() {
     return (
         <Container sx={{ pt: PADDING }}>
             <Typography variant='heading'>About</Typography>
-            {isMobile ?
-                <Box sx={{ mt: 1, display: 'flex', width: '100%', flexDirection: 'column', justifyContent: 'space-between', alignContent: 'center' }}>
-                    <ProfilePicture />
-                    <AboutDescription />
-                </Box>
-                :
-                <Grid container sx={{ mt: 1 }} spacing={5}>
-                    <Grid item xs={1}></Grid>
-                    <Grid item xs={6}>
-                        <AboutDescription />
-                    </Grid>
-                    <Grid item xs={5} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <Container sx={{ mt: 4 }}>
+                <Grid container sx={{ display: 'flex', flexDirection: 'row-reverse' }} spacing={4}>
+                    <Grid item xs={12} sm={12} md={12} lg={5}>
                         <ProfilePicture />
                     </Grid>
+                    <Grid item xs={12} sm={12} md={12} lg={7}>
+                        <AboutDescription />
+                    </Grid>
                 </Grid>
-            }
+            </Container>
+
 
         </Container >
     );

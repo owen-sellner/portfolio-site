@@ -18,17 +18,24 @@ function ProfilePicture() {
             sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center',
-                p: 2,
-                mb: 3,
-                background: 'linear-gradient(#45AAB8, #4565B8)'
+                alignItems: 'center'
             }}
         >
-            <img
-                src={ProfilePic}
-                alt="Profile Picture"
-                style={{ width: INNER_SIZE, height: INNER_SIZE }}
-            />
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    p: 2,
+                    background: 'linear-gradient(#45AAB8, #4565B8)'
+                }}
+            >
+                <img
+                    src={ProfilePic}
+                    alt="Profile Picture"
+                    style={{ width: INNER_SIZE, height: INNER_SIZE }}
+                />
+            </Box>
         </Box >
     );
 };
