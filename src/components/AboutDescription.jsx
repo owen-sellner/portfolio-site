@@ -1,27 +1,13 @@
-import { Typography, List, ListItem, Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function AboutDescription() {
     return (
-        <>
+        <Box sx={{ mt: 3 }}>
             <Typography variant='largeText'>Hi there! I'm Owen. I am a third year management engineering student at the University of Waterloo.</Typography>
-            <Typography variant='largeText' sx={{ mt: 3 }}>Some things about me:</Typography>
-            <Box sx={{ mx: 5 }}>
-                <List sx={{ listStyleType: 'disc' }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography variant='largeText'>I enjoy playing soccer and hockey</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography variant='largeText'>I like reading 📚</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography variant='largeText'>I'm super into tv dramas (I just finished the first season of How to Get Away with Murder)</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography variant='largeText'>I recently learned how to ride a bike with no hands 😎</Typography>
-                    </ListItem>
-                </List>
-            </Box>
-        </>
+            <Typography variant='largeText' sx={{ mt: 3 }}>
+                I am currently learning front-end development and machine learning. I believe in tech's potential to drive positive change and I am passionate about developing web applications that make a difference for society.
+            </Typography>
+        </Box>
     );
 };
 
