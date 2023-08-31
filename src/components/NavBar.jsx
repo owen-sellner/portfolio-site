@@ -10,6 +10,8 @@ function NavBar() {
 
     const { theme } = useContext(ThemeContext);
 
+    const BACKGROUND = theme ? '#000000E6' : '#ffffffE6';
+
     const isMobile = useMediaQuery(useTheme().breakpoints.down("sm"));
 
     const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +22,7 @@ function NavBar() {
 
     return (
         <>
-            <Box sx={{ height: '6em', display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ height: '6em', display: 'flex' }}>
                 {isMobile ?
                     <Box
                         style={{ zIndex: 99999 }}
@@ -30,6 +32,8 @@ function NavBar() {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'space-between',
+                            backgroundColor: BACKGROUND,
+                            py: 1,
                             px: 3
                         }}
                     >
@@ -48,6 +52,7 @@ function NavBar() {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'space-around',
+                            backgroundColor: BACKGROUND,
                             py: 2
                         }}
                     >
