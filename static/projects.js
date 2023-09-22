@@ -1,6 +1,16 @@
 export const projects = [
     {
         year: "2023",
+        title: "Type Trainer",
+        description: "A website to practice touch typing and to learn more about JavaScipt DOM Manipulation.",
+        languages: ["HTML/CSS", "Javascript"],
+        frameworks: [],
+        figma: "https://www.figma.com/file/53AoQ1WdM3NnVYNwF5lpb8/Type-Trainer?type=design&node-id=0%3A1&mode=design&t=6e8t3HJmZh7JI4kJ-1",
+        github: "https://github.com/owen-sellner/type-trainer",
+        demo: "https://osellner-type-trainer.netlify.app/",
+    },
+    {
+        year: "2023",
         title: "Portfolio Site",
         description: "A website to share information about myself and showcase projects I have worked on.",
         languages: ["Javascript"],
