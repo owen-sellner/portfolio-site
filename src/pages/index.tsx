@@ -11,7 +11,22 @@ export default function Home() {
             </Head>
             <main>
                 <section style={{ height: "80vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <h1 style={{ fontSize: "120px" }}>OWEN SELLNER</h1>
+                    <div>
+                        <h1 style={{ fontSize: "120px", letterSpacing: "-3.36px" }}>OWEN SELLNER</h1>
+                        <div style={{ display: "flex", justifyContent: "space-between"}}>
+                            <p className='text-temp'>SOFTWARE DEVELOPER</p>
+                            <p className='text-temp'>PORTFOLIO 2025</p>
+                        </div>
+                    </div>
+                </section>
+                <section style={{ background: "red", height: "80vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <div>
+                        <h1 style={{ fontSize: "120px", letterSpacing: "-3.36px" }}>OWEN SELLNER</h1>
+                        <div style={{ display: "flex", justifyContent: "space-between"}}>
+                            <p className='text-temp'>SOFTWARE DEVELOPER</p>
+                            <p className='text-temp'>PORTFOLIO 2025</p>
+                        </div>
+                    </div>
                 </section>
             </main>
         </>
