@@ -9,6 +9,7 @@ export default function App({ Component, pageProps, router} : AppProps) {
             <div className='nav'>
                 <Link href="/">Home</Link>
                 <Link href="/test">Test</Link>
+                <Link target="_blank" href="/Resume.pdf">Resume</Link>
             </div>
             <AnimatePresence mode='wait'>
                 <Component key={router.route} {...pageProps} />
