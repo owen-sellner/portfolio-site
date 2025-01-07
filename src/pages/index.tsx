@@ -10,11 +10,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <h1>Home</h1>
-                <div>
-                    <p>test1</p>
-                    <p>test2</p>
-                </div>
+                <section style={{ height: "80vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <h1 style={{ fontSize: "120px" }}>OWEN SELLNER</h1>
+                </section>
             </main>
         </>
     )

@@ -7,9 +7,14 @@ export default function App({ Component, pageProps, router} : AppProps) {
     return (
         <div>
             <div className='nav'>
-                <Link href="/">Home</Link>
-                <Link href="/test">Test</Link>
-                <Link target="_blank" href="/Resume.pdf">Resume</Link>
+                <div style={{ flexGrow: 1 }}>
+                    <Link style={{ fontSize: "24px", fontWeight: 900 }} href="/">OS</Link>
+                </div>
+                <div>
+                    <Link href="/">HOME</Link>
+                    <Link href="/test">TEST</Link>
+                    <Link target="_blank" href="/Resume.pdf">RESUME</Link>
+                </div>
             </div>
             <AnimatePresence mode='wait'>
                 <Component key={router.route} {...pageProps} />
