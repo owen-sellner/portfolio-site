@@ -14,7 +14,7 @@ export default function Home() {
             <main>
                 <section style={{ height: "80vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <div>
-                        <AnimatedName name="OWEN SELLNER" />
+                        <AnimatedName />
                         <AnimatedSubtitles />
                     </div>
                 </section>

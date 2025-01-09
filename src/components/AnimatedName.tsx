@@ -1,10 +1,6 @@
 import { motion } from "motion/react";
 
-interface AnimatedNameProps {
-  name: String
-}
-
-const defaultAnimations = {
+const animationVariants = {
   hidden: {
     y: "100%",
   },
@@ -17,22 +13,34 @@ const defaultAnimations = {
   }
 }
 
-export default function AnimatedName({ name } : AnimatedNameProps) {
+function SplitName({ name } : { name : string}) {
   return (
-    <div style={{ overflow: "hidden" }}>
-      <motion.span
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      {name.split("").map((letter, index) => (
+        <motion.span
+        key={index}
+        style={{ display: "inline-block" }}
+        variants={animationVariants}
+        >
+          <h1 className="name">{letter}</h1>
+        </motion.span>
+      ))}
+    </div>
+  )
+}
+
+export default function AnimatedName() {
+  return (
+      <motion.div
         initial="hidden"
         animate="visible"
-        transition={{ staggerChildren: 0.04 }}
+        transition={{ staggerChildren: 0.06 }}
+        style={{ overflow: "hidden" }}
+        className="container-temp"
       >
-        {name.split("").map((value, index) =>
-          <motion.span key={index} style={{ display: "inline-block" }} variants={defaultAnimations}>
-            <h1 style={{ fontSize: "140px", letterSpacing: "-3.36px" }}>
-              {value != " " ? value : "\u00A0"}
-            </h1>
-          </motion.span>
-        )}
-      </motion.span>
-    </div>
+          <SplitName name="OWEN"/>
+          <h1 className="name space-temp">&nbsp;</h1>
+          <SplitName name="SELLNER"/>
+      </motion.div>
   );
 };
