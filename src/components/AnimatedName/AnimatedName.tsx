@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import styles from "@/components/AnimatedName/AnimatedName.module.scss";
 
 const animationVariants = {
   hidden: {
@@ -36,10 +37,10 @@ export default function AnimatedName() {
         animate="visible"
         transition={{ staggerChildren: 0.06 }}
         style={{ overflow: "hidden" }}
-        className="container-temp"
+        className={styles.container}
       >
           <SplitName name="OWEN"/>
-          <h1 className="name space-temp">&nbsp;</h1>
+          <h1 className={`name ${styles.space}`}>&nbsp;</h1>
           <SplitName name="SELLNER"/>
       </motion.div>
   );

@@ -1,4 +1,4 @@
-import AnimatedName from '@/components/AnimatedName'
+import { AnimatedName } from '@/components/AnimatedName'
 import AnimatedSubtitles from '@/components/AnimatedSubtitles'
 import Head from 'next/head'
 

@@ -1,0 +1,1 @@
+export { default as AnimatedName } from "@/components/AnimatedName/AnimatedName";
