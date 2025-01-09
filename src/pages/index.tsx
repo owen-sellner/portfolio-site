@@ -1,4 +1,5 @@
 import AnimatedName from '@/components/AnimatedName'
+import AnimatedSubtitles from '@/components/AnimatedSubtitles'
 import Head from 'next/head'
 
 export default function Home() {
@@ -14,10 +15,7 @@ export default function Home() {
                 <section style={{ height: "80vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <div>
                         <AnimatedName name="OWEN SELLNER" />
-                        <div style={{ display: "flex", justifyContent: "space-between"}}>
-                            <p className='text-temp'>SOFTWARE DEVELOPER</p>
-                            <p className='text-temp'>PORTFOLIO 2025</p>
-                        </div>
+                        <AnimatedSubtitles />
                     </div>
                 </section>
             </main>
