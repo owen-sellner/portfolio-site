@@ -12,7 +12,7 @@ export default function App({ Component, pageProps, router} : AppProps) {
                 </div>
                 <div>
                     <Link href="/">HOME</Link>
-                    <Link href="/test">TEST</Link>
+                    <Link href="/projects">PROJECTS</Link>
                     <Link target="_blank" href="/Resume.pdf">RESUME</Link>
                 </div>
             </div>
