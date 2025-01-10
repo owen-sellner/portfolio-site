@@ -1,5 +1,5 @@
 import { AnimatedName } from '@/components/AnimatedName'
-import AnimatedSubtitles from '@/components/AnimatedSubtitles'
+import { AnimatedSubtitles } from '@/components/AnimatedSubtitles'
 import Head from 'next/head'
 
 export default function Home() {

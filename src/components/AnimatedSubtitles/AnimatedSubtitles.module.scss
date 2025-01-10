@@ -1,0 +1,12 @@
+$breakpoint: 600px;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    @media (min-width: $breakpoint) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
