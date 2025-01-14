@@ -1,0 +1,1 @@
+export { default as AnimatedButton } from "@/components/AnimatedButton/AnimatedButton"

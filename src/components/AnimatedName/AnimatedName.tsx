@@ -19,9 +19,9 @@ function SplitName({ name } : { name : string}) {
     <div style={{ display: "flex", justifyContent: "center" }}>
       {name.split("").map((letter, index) => (
         <motion.span
-        key={index}
-        style={{ display: "inline-block" }}
-        variants={animationVariants}
+          key={index}
+          style={{ display: "inline-block" }}
+          variants={animationVariants}
         >
           <h1 className="name">{letter}</h1>
         </motion.span>

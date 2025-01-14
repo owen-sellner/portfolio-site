@@ -3,6 +3,7 @@ import { AnimatePresence } from 'motion/react';
 import { AppProps } from 'next/app';
 import Link from 'next/link';
 import Head from 'next/head';
+import { AnimatedButton } from '@/components/AnimatedButton';
 
 export default function App({ Component, pageProps, router} : AppProps) {
     return (
@@ -17,10 +18,10 @@ export default function App({ Component, pageProps, router} : AppProps) {
                 <div style={{ flexGrow: 1 }}>
                     <Link style={{ fontSize: "24px", fontWeight: 900 }} href="/">OS</Link>
                 </div>
-                <div>
-                    <Link href="/">HOME</Link>
-                    <Link href="/projects">PROJECTS</Link>
-                    <Link target="_blank" href="/Resume.pdf">RESUME</Link>
+                <div style={{ display: "flex" }}>
+                    <AnimatedButton text="ABOUT" href="/" />
+                    <AnimatedButton text="PROJECTS" href="/projects" />
+                    <AnimatedButton text="RESUME" target="_blank" href="/Resume.pdf" />
                 </div>
             </div>
             <AnimatePresence mode='wait'>
