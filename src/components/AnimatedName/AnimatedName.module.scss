@@ -1,4 +1,23 @@
-$breakpoint: 600px; 
+$breakpoint: 600px;
+
+$text-sm: 56px;
+$text-md: 100px;
+$text-lg: 140px;
+
+.text {
+  font-size: $text-sm; 
+  letter-spacing: calc($text-sm * -0.06);
+
+  @media (min-width: 900px) {
+    font-size: $text-md;
+    letter-spacing: calc($text-md * -0.06);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: $text-lg;
+    letter-spacing: calc($text-lg * -0.06);
+  }
+}
 
 .space {
   display: none;

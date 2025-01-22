@@ -23,7 +23,7 @@ function SplitName({ name } : { name : string}) {
           style={{ display: "inline-block" }}
           variants={animationVariants}
         >
-          <h1 className="name">{letter}</h1>
+          <h1 className={styles.text}>{letter}</h1>
         </motion.span>
       ))}
     </div>
@@ -36,11 +36,11 @@ export default function AnimatedName() {
         initial="hidden"
         animate="visible"
         transition={{ staggerChildren: 0.06 }}
-        style={{ overflow: "hidden" }}
+        style={{ overflow: "hidden", padding: "4px" }}
         className={styles.container}
       >
           <SplitName name="OWEN"/>
-          <h1 className={`name ${styles.space}`}>&nbsp;</h1>
+          <h1 className={`${styles.text} ${styles.space}`}>&nbsp;</h1>
           <SplitName name="SELLNER"/>
       </motion.div>
   );
